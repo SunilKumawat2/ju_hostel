@@ -1,0 +1,3 @@
+export const BaseUrl='https://hostel.jecrcuniversity.edu.in/superadmin/api/' // 'https://rasatva.apponedemo.top/hostel-web/api/'          // https://hostel.jecrcuniversity.edu.in/superadmin/api/
+export const SecretKey='Juhostel'
+export const ImageUrl='https://hostel.jecrcuniversity.edu.in/superadmin/public/' //https://rasatva.apponedemo.top/hostel-web/public/      //https://hostel.jecrcuniversity.edu.in/superadmin/public/
