@@ -406,8 +406,9 @@ const HostelBookingRoomDetails = () => {
                                           className="h-auto w-[10px] w-auto accent-red-600 border-red-600 rounded focus:ring-0"
                                         />
                                         <label htmlFor="termsCheck" className="text-red-600 text-sm md:text-base">
-                                          I agree to the Terms and Conditions
+                                      <Link><span>I agree to the</span> </Link> <Link to={"/terms_conditions"}><span>Terms and Conditions</span> </Link>
                                         </label>
+                                        
                                       </div>
 
                                       {/* Booking Button or Payment Gateway */}
