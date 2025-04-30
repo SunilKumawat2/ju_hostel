@@ -122,7 +122,11 @@ const Header = (props) => {
                     get_settings[0]?.footer_logo != null ? (
                       <img src={`${ImageUrl}${get_settings[0]?.header_logo}`} alt="Logo"></img>
                     ) : (
+<<<<<<< HEAD
                       <h4 className="fw-bold">Ju Hostel</h4>
+=======
+                      <h4 className="fw-bold">JU Hostel & Transport</h4>
+>>>>>>> ju_hostel_solving_bugs_30-4-2025_till_evening
                     )
                   }</Link>
                 )
@@ -133,7 +137,11 @@ const Header = (props) => {
                     get_settings[0]?.footer_logo != null ? (
                       <img src={`${ImageUrl}${get_settings[0]?.header_logo}`} alt="Logo"></img>
                     ) : (
+<<<<<<< HEAD
                       <h4 className="fw-bold">Ju Hostel</h4>
+=======
+                      <h4 className="fw-bold">JU Hostel & Transport</h4>
+>>>>>>> ju_hostel_solving_bugs_30-4-2025_till_evening
                     )
                   }</Link>
                 )
@@ -145,7 +153,11 @@ const Header = (props) => {
                     get_settings[0]?.footer_logo != null ? (
                       <img src={`${ImageUrl}${get_settings[0]?.header_logo}`} alt="Logo"></img>
                     ) : (
+<<<<<<< HEAD
                       <h4 className="fw-bold">Ju Hostel</h4>
+=======
+                      <h4 className="fw-bold">JU Hostel & Transport</h4>
+>>>>>>> ju_hostel_solving_bugs_30-4-2025_till_evening
                     )
                   }</Link>
                 )

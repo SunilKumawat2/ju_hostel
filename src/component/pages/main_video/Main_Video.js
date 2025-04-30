@@ -67,7 +67,11 @@ const Main_Video = () => {
             localStorage.setItem("JECRC", true)
             localStorage.removeItem("Other")
           }}>
+<<<<<<< HEAD
             <Link to="/hostel_3d_images" className="btn btn-dark btn-lg">
+=======
+            <Link to="/hostel_3d_images" className="btn btn-dark btn-lg fs-6">
+>>>>>>> ju_hostel_solving_bugs_30-4-2025_till_evening
               Welcome to JECRC Hostel →
             </Link>
           </div>
@@ -75,8 +79,22 @@ const Main_Video = () => {
             localStorage.setItem("Other", true)
             localStorage.removeItem("JECRC")
           }}>
+<<<<<<< HEAD
             <Link to="/third_party_home" className="btn btn-success btn-lg">
               Welcome to Third Party Hostel →
+=======
+            <Link to="/third_party_home" className="btn btn-success btn-lg fs-6">
+              JECRC Collaborated Hostels →
+            </Link>
+
+          </div>
+          <div onClick={() => {
+            localStorage.setItem("Other", true)
+            localStorage.removeItem("JECRC")
+          }}>
+            <Link to="/transport_booking_list" className="btn btn-danger btn-lg fs-6">
+              Book Transport →
+>>>>>>> ju_hostel_solving_bugs_30-4-2025_till_evening
             </Link>
 
           </div>
