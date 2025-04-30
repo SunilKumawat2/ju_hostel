@@ -161,6 +161,8 @@ const Ragister = () => {
   //   }
 
   // }
+  const [userType, setUserType] = useState(""); // <-- This defines the state
+
 
   const handleChange = useCallback((input, isPhoneInput = false) => {
     if (isPhoneInput) {
@@ -353,30 +355,53 @@ const Ragister = () => {
                                     </select>
                                   </div>
                                 </div> */}
-                                  <div className='col-md-6'>
-                                  <div className="d-inline input-group input-group-two left-icon mb-20 w-50">
-                                  <label className="w-100">College Enrollment No</label>
-                                  <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="College Enrollment No"
-                                    name="hostel_register_no"
-                                    value={formdata.hostel_register_no}
-                                    maxLength={10}
-                                    onChange={(e) => {
-                                      let onlyNums = e.target.value.replace(/[^0-9]/g, ''); // Allow only numbers
-                                      onlyNums = onlyNums.slice(0, 10); // Limit to 10 digits
-                                      handleChange({ target: { name: 'hostel_register_no', value: onlyNums } });
-                                    }}
-                                    onBlur={() => {
-                                      if (formdata.hostel_register_no.length < 10) {
-                                        // alert('College Enrollment Number must be exactly 10 digits.');
-                                      }
-                                    }}
-                                  />
+                                <div style={{ marginBottom: "1rem" }}>
+                                  <label htmlFor="userType" style={{ marginRight: "10px" }}>Select User Type:</label>
+                                  <select
+                                    id="userType"
+                                    value={userType}
+                                    onChange={(e) => setUserType(e.target.value)}
+                                  >
+                                    <option value="">-- Please choose an option --</option>
+                                    <option value="student">School of Engineering & technology</option>
+                                    <option value="faculty">School of Computer Application</option>
+                                    <option value="admin">Jaipur School of Business</option>
+                                    <option value="admin">School of Science</option>
+                                    <option value="admin">School of Humanities and Social Sciences</option>
+                                    <option value="admin">School of Law</option>
+                                    <option value="admin">Jaipur School of Mass Communication</option>
+                                    <option value="admin">Jaipur School of Design</option>
+                                    <option value="admin">Jaipur School of Economics</option>
+                                    <option value="admin">School of Allied Health Science</option>
+                                    <option value="admin">School of Hospitality</option>
+                                    <option value="admin">PhD(Doctral Programme)</option>
+
+                                  </select>
                                 </div>
+                                <div className='col-md-6'>
+                                  <div className="d-inline input-group input-group-two left-icon mb-20 w-50">
+                                    <label className="w-100">College Enrollment No</label>
+                                    <input
+                                      type="text"
+                                      className="form-control"
+                                      placeholder="College Enrollment No"
+                                      name="hostel_register_no"
+                                      value={formdata.hostel_register_no}
+                                      maxLength={10}
+                                      onChange={(e) => {
+                                        let onlyNums = e.target.value.replace(/[^0-9]/g, ''); // Allow only numbers
+                                        onlyNums = onlyNums.slice(0, 10); // Limit to 10 digits
+                                        handleChange({ target: { name: 'hostel_register_no', value: onlyNums } });
+                                      }}
+                                      onBlur={() => {
+                                        if (formdata.hostel_register_no.length < 10) {
+                                          // alert('College Enrollment Number must be exactly 10 digits.');
+                                        }
+                                      }}
+                                    />
                                   </div>
-                              
+                                </div>
+
                                 <div className="col-md-6">
                                   <div className="input-group input-group-two left-icon mb-20">
                                     <label className="w-100">Full Name</label>

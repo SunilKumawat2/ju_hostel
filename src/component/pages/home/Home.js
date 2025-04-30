@@ -191,7 +191,7 @@ const Home = () => {
                             <div className="col-lg-3" key={hostel.id}>
                               <div className="room-box extra-height">
                                 <div className="room-bg">
-                                  <img src={`${ImageUrl}${hostel?.images?.image}`} className="reel" id="image2d" data-stitched={496} data-frames={30} data-frame={15} data-spacing={5} data-rows={3} data-row={2} data-loops="false" alt="" />
+                                  <img src={`${ImageUrl}${hostel?.images[0]?.image}`} className="reel" id="image2d" data-stitched={496} data-frames={30} data-frame={15} data-spacing={5} data-rows={3} data-row={2} data-loops="false" alt="" />
                                 </div>
                                 <div className="room-content">
                                   <h3><Link to="#">{hostel?.name}</Link></h3>
@@ -214,7 +214,7 @@ const Home = () => {
                           <div className="col-lg-4" key={hostel.id}>
                             <div className="room-box extra-height">
                               <div className="room-bg">
-                                <img src={`${ImageUrl}${hostel?.images?.image}`} className="reel" id="image2d" data-stitched={496} data-frames={30} data-frame={15} data-spacing={5} data-rows={3} data-row={2} data-loops="false" alt='' />
+                                <img src={`${ImageUrl}${hostel?.images[0]?.image}`} className="reel" id="image2d" data-stitched={496} data-frames={30} data-frame={15} data-spacing={5} data-rows={3} data-row={2} data-loops="false" alt='' />
                               </div>
                               <div className="room-content">
                                 <h3><Link to="#">{hostel?.name}</Link></h3>
