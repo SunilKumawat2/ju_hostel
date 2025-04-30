@@ -20,11 +20,7 @@ const Login = () => {
   const [user_role, set_User_Role] = useState([])
   // const [email, set_Email] = useState([])
   const [formdata, setFormdata] = useState({
-<<<<<<< HEAD
-    user_role: '',
-=======
     user_role: '1',
->>>>>>> ju_hostel_solving_bugs_30-4-2025_till_evening
     email: '',
     hostel_register_no: '',
     // country_code: '',
@@ -68,11 +64,7 @@ const Login = () => {
         // mobile: nationalNumber,
         // country_code: `+${countryCode}`
         email: email,
-<<<<<<< HEAD
-        hostel_register_no:hostel_register_no
-=======
         hostel_register_no: hostel_register_no
->>>>>>> ju_hostel_solving_bugs_30-4-2025_till_evening
       }));
 
     } else {
@@ -90,11 +82,7 @@ const Login = () => {
     e.preventDefault()
     setIsLoading(true)
     const requiredFields = {
-<<<<<<< HEAD
-      user_role: "The User Roles field is required",
-=======
       // user_role: "The User Roles field is required",
->>>>>>> ju_hostel_solving_bugs_30-4-2025_till_evening
       // mobile: "The Phone number field is required",
       email: "The Email field is required",
       hostel_register_no: "The hostel register no field is required",
@@ -167,42 +155,6 @@ const Login = () => {
                             <form action="#" className="mt-5" method='post' onSubmit={(e) => { handleSubmit(e) }}>
                               <div className="formgrid">
                                 <div className='row'>
-<<<<<<< HEAD
-                                  <div className='col-md-6'>
-                                    <div className="input-group input-group-two left-icon mb-20">
-                                      <label>User Roles</label>
-                                      <select name="user_role" id="guest" style={{ display: 'flex' }} value={formdata.user_role} onChange={(e) => { handleChange(e) }}>
-                                        <option value='' selected>-- Select --
-                                        </option>
-                                        {
-                                          user_role?.map((user_role_result) => {
-                                            return (
-                                              <>
-                                                {
-                                                  user_role_result?.name == "Student" && (
-                                                    <option value={user_role_result?.id}>{user_role_result?.name}</option>
-                                                  )
-                                                }
-                                              </>
-                                            )
-                                          })
-                                        }
-                                      </select>
-                                    </div>
-                                  </div>
-                                  <div className='col-md-6'>
-                                    <div className="d-inline input-group input-group-two left-icon mb-20 w-100">
-                                      <label className="w-100">College Register No</label>
-                                      <input type="text" className="form-control" placeholder="College Register No"
-                                        name="hostel_register_no" value={formdata.hostel_register_no} onChange={(e) => { handleChange(e) }} />
-                                      {/* <PhoneSelector phnumber={`${formdata.country_code}+${formdata.mobile}`} phoneInput={(value) => handleChange(value, true)} /> */}
-                                    </div>
-                                  </div>
-                                  <div className='col-md-12'>
-                                    <div className="d-inline input-group input-group-two left-icon mb-20 w-100">
-                                      <label className="w-100">Email ID</label>
-                                      <input type="email" className="form-control" placeholder="email Id"
-=======
                                   {/* <div className='col-md-6'>
                                     <div className="input-group input-group-two left-icon mb-20">
                                       <label>User Roles</label>
@@ -230,34 +182,33 @@ const Login = () => {
                                     </div>
                                   </div> */}
                                   <div className='col-md-12'>
-                                  <div className="d-inline input-group input-group-two left-icon mb-20 w-50">
-                                  <label className="w-100">College Enrollment No</label>
-                                  <input
-                                    type="text"
-                                    className="form-control"
-                                    placeholder="College Enrollment No"
-                                    name="hostel_register_no"
-                                    value={formdata.hostel_register_no}
-                                    maxLength={10}
-                                    onChange={(e) => {
-                                      let onlyNums = e.target.value.replace(/[^0-9]/g, ''); // Allow only numbers
-                                      onlyNums = onlyNums.slice(0, 10); // Limit to 10 digits
-                                      handleChange({ target: { name: 'hostel_register_no', value: onlyNums } });
-                                    }}
-                                    // onBlur={() => {
-                                    //   if (formdata.hostel_register_no.length < 10) {
-                                    //     // alert('College Enrollment Number must be exactly 10 digits.');
-                                    //   }
-                                    // }}
-                                  />
-                                </div>
+                                    <div className="d-inline input-group input-group-two left-icon mb-20 w-50">
+                                      <label className="w-100">College Enrollment No</label>
+                                      <input
+                                        type="text"
+                                        className="form-control"
+                                        placeholder="College Enrollment No"
+                                        name="hostel_register_no"
+                                        value={formdata.hostel_register_no}
+                                        maxLength={10}
+                                        onChange={(e) => {
+                                          let onlyNums = e.target.value.replace(/[^0-9]/g, ''); // Allow only numbers
+                                          onlyNums = onlyNums.slice(0, 10); // Limit to 10 digits
+                                          handleChange({ target: { name: 'hostel_register_no', value: onlyNums } });
+                                        }}
+                                      // onBlur={() => {
+                                      //   if (formdata.hostel_register_no.length < 10) {
+                                      //     // alert('College Enrollment Number must be exactly 10 digits.');
+                                      //   }
+                                      // }}
+                                      />
+                                    </div>
 
                                   </div>
                                   <div className='col-md-12 mt-2'>
                                     <div className="d-inline input-group input-group-two left-icon mb-20 w-100">
                                       <label className="w-100">Email ID</label>
                                       <input type="email" className="form-control" placeholder="Email Id"
->>>>>>> ju_hostel_solving_bugs_30-4-2025_till_evening
                                         name="email" value={formdata.email} onChange={(e) => { handleChange(e) }} />
                                       {/* <PhoneSelector phnumber={`${formdata.country_code}+${formdata.mobile}`} phoneInput={(value) => handleChange(value, true)} /> */}
                                     </div>
