@@ -406,14 +406,9 @@ const HostelBookingRoomDetails = () => {
                                           className="h-auto w-[10px] w-auto accent-red-600 border-red-600 rounded focus:ring-0"
                                         />
                                         <label htmlFor="termsCheck" className="text-red-600 text-sm md:text-base">
-<<<<<<< HEAD
-                                          I agree to the Terms and Conditions
-                                        </label>
-=======
                                           <Link><span>I agree to the</span> </Link> <Link to={"/terms_conditions"}><span>Terms and Conditions</span> </Link>
                                         </label>
 
->>>>>>> ju_hostel_solving_bugs_30-4-2025_till_evening
                                       </div>
 
                                       {/* Booking Button or Payment Gateway */}
@@ -491,15 +486,6 @@ const HostelBookingRoomDetails = () => {
                                 <Slider {...settings}>
                                   {get_room_details?.room_detail?.room_images?.map((roomImage, index) => (
                                     <div key={index} className="image-slide1">
-<<<<<<< HEAD
-                                      <img
-                                        src={`${ImageUrl}${roomImage?.image}`}
-                                        alt={`room-image-${index}`}
-                                        className="slider-image"
-                                        onClick={() => handleImageClick(`${ImageUrl}${roomImage?.image}`)}
-                                        style={{ cursor: "pointer" }}
-                                      />
-=======
                                       {
                                         roomImage?.image_type == "local" ? (
                                           <img
@@ -520,7 +506,6 @@ const HostelBookingRoomDetails = () => {
                                         )
                                       }
 
->>>>>>> ju_hostel_solving_bugs_30-4-2025_till_evening
                                     </div>
                                   ))}
                                 </Slider>
